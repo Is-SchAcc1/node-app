@@ -47,3 +47,19 @@ export const update = async(req, res) => {
     
     }
 }
+
+// export const deleteEmployee = async(req, res) =>{
+//     try {
+//         const id = req.params.id
+//         const employeeExist = await Employee.findOne({_id:id})
+
+//         if(!employeeExist){
+//             return res.status(404).json({message: "Employee not found!"})
+//         }
+
+//         await Employee.findOneAndDelete(id)
+//         res.status(201).json({message:"Employee Terminated"})
+//     } catch (error) {
+//         res.status(500).json({error:"Internal Server Error"})
+//     }
+// }
